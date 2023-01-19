@@ -34,13 +34,29 @@ namespace DSA_StacksQueues
             Node temp = this.first;
             if (temp == null)
             {
-                Console.WriteLine("Queue is empty");
+                Console.WriteLine("\nQueue Is Empty Now");
                 return;
             }
             while (temp != null)
             {
                 Console.Write(temp.id + "\n");
                 temp = temp.next;
+            }
+        }
+        public void Dequeue()
+        {
+            if (this.first == null)
+            {
+                Console.WriteLine("Queue is Empty");
+            }
+            else
+            {
+                Console.WriteLine("\nNow Dequeue Performed\n");
+                while (this.first != null)
+                {
+                    Console.WriteLine(first.id + " is Removed");
+                    this.first = first.next;
+                }
             }
         }
     }

@@ -19,12 +19,14 @@
             //obj.Peak();
             //obj.Pop();
             //obj.display();
-            
+
             Queue obj = new Queue();
             obj.Enqueue(56);
             obj.Enqueue(30);
             obj.Enqueue(70);
             Console.WriteLine("\nThe Elements Are Present In The Queue");
+            obj.Display();
+            obj.Dequeue();
             obj.Display();
         }
     }
