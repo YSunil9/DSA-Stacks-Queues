@@ -26,7 +26,7 @@ namespace DSA_StacksQueues
                 node.next = this.top;
             }
             this.top = node;
-            Console.WriteLine(node.id + " Added to stack\n");
+            Console.WriteLine(node.id + " Added to stack");
         }
         public void display()
         {
@@ -44,6 +44,25 @@ namespace DSA_StacksQueues
                     temp = temp.next;
                 }
             }
+        }
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine(" Deletion is not possible");
+                return;
+            }
+            Console.WriteLine("{0} is deleted from stack", top.id);
+            top = top.next;
+        }
+        public void Peak()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("stack is empty");
+                return;
+            }
+            Console.WriteLine("{0} is on the top of the stack", top.id);
         }
     }
 }

@@ -8,7 +8,16 @@
             Stack obj = new Stack();
             obj.Push(70);
             obj.Push(30);
-            obj.Push(56);
+            obj.Push(56);        
+            obj.display();
+            obj.Peak();
+            obj.Pop();
+            obj.display();
+            obj.Peak();
+            obj.Pop();
+            obj.display();
+            obj.Peak();
+            obj.Pop();
             obj.display();
         }
     }
